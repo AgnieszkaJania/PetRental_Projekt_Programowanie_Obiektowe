@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace CarRentalCore.Model {
+namespace PetAccessoryRentalCore.Model {
     public class Accessory {
         public int Id {
             get; set;
@@ -21,14 +21,14 @@ namespace CarRentalCore.Model {
         public IEnumerable<Rental> Rentals {
             get; set;
         }
-        
+
         public int PetTypeId {
             get; set;
         }
         public virtual PetType PetType {
             get; set;
         }
-        
+
         public int SizeId {
             get; set;
         }

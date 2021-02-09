@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace CarRentalCore.Model {
+namespace PetAccessoryRentalCore.Model {
 
     public class Size {
         public int Id {

@@ -1,10 +1,10 @@
-﻿using CarRentalCore.Model;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using PetAccessoryRentalCore.Model;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CarRentalCore {
+namespace PetAccessoryRentalCore {
     public class PetRentalContext : DbContext {
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
@@ -14,17 +14,17 @@ namespace CarRentalCore {
             get; private set;
         }
         public DbSet<Accessory> Accessories {
-            get;private set;
+            get; private set;
         }
         public DbSet<Client> Clients {
-            get;private set;
+            get; private set;
         }
         public DbSet<PetType> PetTypes {
             get; private set;
         }
-        
+
         public DbSet<Size> Sizes {
-            get;private set;
+            get; private set;
         }
     }
 }

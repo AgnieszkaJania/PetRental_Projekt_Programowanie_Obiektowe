@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CarRentalGui {
+namespace PetAccessoryRentalGui {
     /// <summary>
     /// Logika interakcji dla klasy AddClient.xaml
     /// </summary>
@@ -22,6 +22,8 @@ namespace CarRentalGui {
             InitializeComponent();
         }
         private void AddNewClient(object sender, EventArgs e) {
+
+            PetAccessoryRentalCore.PetRentalContext
             string name = ClientName.Text;
             string surname = ClientSurname.Text;
             ClientDateofBirth.Text = name;
